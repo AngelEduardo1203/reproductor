@@ -32,12 +32,12 @@ def unpause():
     pygame.mixer.music.unpause()
 
 var = tkr.StringVar() 
-song_title = tkr.Label(music_player, width=40, height=2, font="Helvetica 12 bold", bg="green", fg="white", textvariable=var)
+song_title = tkr.Label(music_player, width=40, height=2, font="Helvetica 12 bold", bg="white", fg="white", textvariable=var)
 
-Button1 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="PLAY", command=play, bg="blue", fg="white")
-Button2 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="STOP", command=stop, bg="red", fg="white")
-Button3 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="PAUSE", command=pause, bg="purple", fg="white")
-Button4 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="UNPAUSE", command=unpause, bg="orange", fg="white")
+Button1 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="Play", command=play, bg="green", fg="white")
+Button2 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="parar", command=stop, bg="red", fg="white")
+Button3 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="Pausa", command=pause, bg="yellow", fg="blak")
+Button4 = tkr.Button(music_player, width=9, height=3, font="Helvetica 12 bold", text="reanudar", command=unpause, bg="orange", fg="white")
 
 Button1.place(x=0, y=0)
 Button2.place(x=100, y=0)
